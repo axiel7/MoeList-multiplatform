@@ -1,4 +1,4 @@
-rootProject.name = "MyApplication"
+rootProject.name = "MoeList"
 
 include(":androidApp")
 include(":shared")

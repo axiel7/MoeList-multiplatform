@@ -1,0 +1,14 @@
+package data.model
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Response<T>(
+    @SerialName("data")
+    val data: T? = null,
+    @SerialName("paging")
+    val paging: Paging? = null,
+    override val error: String? = null,
+    override val message: String? = null,
+) : BaseResponse()
